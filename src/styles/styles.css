@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.calculator {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  /* background: linear-gradient(to right, #6be585, #dd3e54); */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #96aec4;
+}
+
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  .calculator {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.5em; /* Smaller heading on mobile */
+  }
+
+  input, select, button {
+      padding: 12px; /* Larger touch targets */
+  }
+
+  button {
+      font-size: 18px; /* Larger button text */
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+      font-size: 14px; /* Slightly smaller text */
+  }
+
+  .input-group {
+      margin-bottom: 12px;
+  }
+}
