@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>My TS Site</title>
-  <link rel="stylesheet" href="styles/style.css" />
+    <title>Basic Investment Calculator</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="shortcut icon" href="src/assets/calculator.png" type="image/x-icon">
 </head>
 <body>
-  <script type="module" src="./dist/main.js"></script>
+    <div class="calculator">
+        <h1>Investment Calculator</h1>
+        
+        <div class="input-group">
+            <label for="initialAmount">Initial Amount (₦):</label>
+            <input type="number" id="initialAmount" value="1000">
+        </div>
+        
+        <div class="input-group">
+            <label for="rate">Annual Rate (%):</label>
+            <input type="number" id="rate" value="5">
+        </div>
+        
+        <div class="input-group">
+            <label for="days">Days:</label>
+            <input type="number" id="days" value="1">
+        </div>
+        
+        <button id="calculateBtn">Calculate</button>
+        
+        <div id="results" class="results">
+            <h2>Results</h2>
+            <p>Future Value: <span id="futureValue">-</span></p>
+            <p>Interest Earned: <span id="interestEarned">-</span></p>
+        </div>
+    </div>
+    <script src="./dist/main.js"></script>
 </body>
 </html>
